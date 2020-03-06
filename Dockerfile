@@ -1,5 +1,5 @@
 FROM alpine:latest
-
+ARG GOST_VERSION
 ENV GOST_VERSION="2.11.0"
 
 ADD https://github.com/ginuerzh/gost/releases/download/v${GOST_VERSION}/gost-linux-armv8-${GOST_VERSION}.gz /tmp/
